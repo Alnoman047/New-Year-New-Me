@@ -1,7 +1,11 @@
 /* header section styles */
 
+body{
+    height: 100%;
+    margin: 50px 140px;
+}
+
 .header {
-  /* background-image: url("../resources/Banner\ Image.png"); */
 
   background-image: linear-gradient(
       180deg,
@@ -10,11 +14,11 @@
     ),
     url("../resources/Banner\ Image.png");
   border-radius: 16px;
-  /* background: linear-gradient(180deg, #070211 0%, rgba(7, 2, 17, 0.3) 100%); */
-  width: 1320px;
+  width: 100%;
   height: 600px;
-  flex-shrink: 0;
-}
+  background-position: center;
+  background-size: cover;
+  }
 
 /* banner section styles */
 #banner-title {
@@ -23,7 +27,9 @@
   font-family: Merriweather;
   font-size: 32px;
   font-weight: 400;
-  line-height: normal;
+  padding-top: 160px;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 #banner-headline {
@@ -32,7 +38,9 @@
   font-family: Merriweather;
   font-size: 72px;
   font-weight: 900;
-  line-height: 95px; /* 131.944% */
+  /* line-height: 180px; 131.944% */
+  padding-bottom: 200px;
+  margin-top: 20px;
 }
 
 /* offer section styles */
@@ -44,7 +52,7 @@
   font-size: 88px;
   font-style: normal;
   font-weight: 700;
-  line-height: normal;
+  margin-bottom: 0;
 }
 
 .deals {
@@ -54,7 +62,8 @@
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
-  line-height: normal;
+  margin-bottom: 0;
+  margin-top: 48px;
 }
 
 .categories {
@@ -64,7 +73,7 @@
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
-  line-height: normal;
+  margin-top: 0;
 }
 
 .new-year {
@@ -82,11 +91,15 @@
 
   display: flex;
   background-position: center;
-  width: 1320px;
+  width: 100%;
   height: 600px;
-  flex-shrink: 0;
-  margin: auto;
+  margin-top: 50px;
   border-radius: 20px;
+}
+
+.midnight-content{
+    padding-top: 80px;
+    padding-left: 126px;
 }
 
 .welcome {
@@ -95,8 +108,8 @@
   font-size: 64px;
   font-style: normal;
   font-weight: 900;
-  line-height: 88px; /* 137.5% */
   letter-spacing: 7.04px;
+  margin-bottom: 0;
 }
 
 .midnight-description {
@@ -105,18 +118,17 @@
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 30px; /* 166.667% */
+  margin-top: 24px;
 }
 
 .join-now {
   /* color: #FFF; */
-  text-align: center;
-  font-family: Inter;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  text-transform: uppercase;
+  border-radius: 8px;
+background: #F00;
+padding: 16px 32px;
+border: 0;
+color: #fff;
+font-weight: 700;
 }
 
 .midnight-img{
@@ -124,13 +136,25 @@
     gap: 50px;
 width: 319.83px;
 height: 464.662px;
-padding: 0.008px 0px 0px 0px;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-flex-shrink: 0;
+padding: 50px;
+
+
 }
+
 /* join now section styles */
+
+.join-now-banner{
+    background-image: linear-gradient(180deg, rgba(255, 0, 0, 0.10) 0%, rgba(255, 0, 0, 0.00) 100%);
+    height: 486px;
+    width: 100%;
+    margin: 120px 0px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    text-align: center;
+    padding-top: 100px;
+
+}
 span{
     color: #F00;
 text-align: center;
@@ -138,25 +162,32 @@ font-family: Inter;
 font-size: 32px;
 font-style: normal;
 font-weight: 600;
-line-height: 56px; /* 175% */
-text-transform: capitalize;
+
 }
 
 .joining-content{
     color: #070211;
 font-family: Inter;
-font-size: 32px;
+font-size: 25px;
 font-style: normal;
 font-weight: 600;
-line-height: 56px;
-text-transform: capitalize;
+
 }
 
 /* best year section styles */
 
+.new-best-offer{
+    display: flex;
+    
+}
+
+.new-best-offer-p{
+    width: 45%;
+    
+}
+
 .best-title{
     color: #F00;
-text-align: center;
 font-family: Inter;
 font-size: 24px;
 font-style: normal;
@@ -185,10 +216,16 @@ line-height: 32px; /* 160% */
 
 .best-offer-img{
     border-radius: 364.844px;
-background: url(<path-to-image>), lightgray -91.279px 0px / 150.038% 100% no-repeat;
 width: 364.844px;
 height: 364.844px;
-flex-shrink: 0;
+border: 15px solid #f00;
+padding: 25px;
+margin-right: 30px;
+
+}
+
+.best-date{
+    width: 35%;
 }
 
 .best-date-title{
@@ -214,4 +251,173 @@ line-height: 32px; /* 160% */
     width: 140px;
 height: 140px;
 flex-shrink: 0;
+}
+
+/* functional content section styles */
+
+.functional{
+    border-radius: 16px 16px 0px 0px;
+background: url('../resources/Rectangle\ 1.png');
+background-repeat: no-repeat;
+background-position: right;
+text-align: center;
+margin-top: 150px;
+
+
+}
+
+.functional-title{
+    color: #070211;
+font-family: Inter;
+font-size: 44px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-bottom: 0;
+}
+
+.holiday-sp{
+font-size: 72px;
+font-weight: 800;
+
+}
+.holiday{
+    color: #070211;
+font-family: Merriweather;
+font-size: 72px;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+margin-top: 0;
+}
+
+.holiday-description{
+    color: rgba(7, 2, 17, 0.60);
+text-align: center;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 32px; /* 160% */
+}
+
+.red-line{
+    border-radius: 16px 0px 16px 16px;
+background: #F00;
+position: relative;
+/* top: 200px; */
+right: 0;
+width: 100%;
+height: 100px;
+
+}
+
+
+.off-tag{
+    width: 206.841px;
+height: 206.841px;
+flex-shrink: 0;
+fill: #F00;
+}
+
+.surprise-box{
+position: left;
+
+margin-right: 400px;
+margin-bottom: 0;
+position: relative;
+}
+
+/* best gifts section styles */
+
+.best-gift-img{
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+
+}
+
+.best-gift-title{
+    color: #F00;
+font-family: Inter;
+font-size: 24px;
+
+font-weight: 500;
+margin-bottom: 0;
+
+}
+
+.awesome{
+    color: #070211;
+font-family: Merriweather;
+font-size: 48px;
+
+font-weight: 900;
+margin-top: 20px;
+margin-bottom: 0;
+
+}
+
+.best-gift-description{
+    color: rgba(7, 2, 17, 0.60);
+font-family: Inter;
+font-size: 20px;
+font-weight: 400;
+line-height: 32px; /* 160% */
+
+}
+
+/* newsletter */
+
+/* footer section styles */
+
+.footer{
+    display: flex;
+    margin-bottom: 0;
+
+}
+
+.footer-address{
+    width: 50%;
+    position: right;
+    padding: 30px;
+    padding-left: 50px;
+}
+
+.footer-mail{
+    width: 50%;
+    position: right;
+    padding: 30px;
+    padding-left: 700px;
+}
+
+footer{
+   background-color: #070211;
+   color: #fff;
+   width: 100%;
+   height: 400px;
+}
+
+.footer-img{
+   text-align: center;
+   margin-top: 0;
+   padding-bottom: 30px;
+}
+
+.join-now-footer{
+    border-radius: 8px;
+    background: transparent;
+    padding: 16px 32px;
+    border: 0;
+    color: #fff;
+    font-weight: 700;
+}
+
+.footer-last{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
 }
